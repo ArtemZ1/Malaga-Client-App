@@ -7,7 +7,7 @@ namespace _Scripts.ObjectPooling
     public class ObjectPooler_Manager : MonoBehaviour
     { 
         [SerializeField] private List<ObjectPoolData> _dataList; // list of scriptable object pools
-
+       
         private Func<IPooledObject> _getComponent;
         private Dictionary<string, LinkedList<GameObject>> _poolDictionary; // dictionary that maps pool tags to linked lists of pooled objects
         private Dictionary<string, GameObject> _parentDictionary; // dictionary that maps pool tags to parent game objects
